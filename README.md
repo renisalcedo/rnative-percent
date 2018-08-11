@@ -17,6 +17,20 @@ yarn add rnative-percent
 npm --save rnative-percent
 ```
 
+By default, calling percent with a given value will be based on the height percentage. To get the percentage
+for the width just pass a second paratemer with the string of 'width' as shown in the following example:
+
+```javascript
+import percent from 'rnative-percent'
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#f1f2f6',
+    width: percent(70, 'width') // YOU CAN PASS A SECOND PARAMETER WITH THE VALUE OF WIDTH
+  }
+})
+```
+
 ```javascript
 import percent from 'rnative-percent'
 
